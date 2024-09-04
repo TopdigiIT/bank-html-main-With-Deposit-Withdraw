@@ -12,7 +12,7 @@ document.getElementById('submit-button').addEventListener('click', function (eve
     // Validate Login Data (Email & Password)
     if (userEmail === 'admin@gmail.com' && userPassword === '1234') {
         alert("Login Successful!");
-        window.location.href = "https://topdigiit.github.io/bank-html-main-With-Deposit-Withdraw/banking.html"; // Redirect to the specified page
+        window.location.href = "banking.html";
     } else {
         alert("User Name or Password is not valid");
     }
