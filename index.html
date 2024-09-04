@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank By Momenul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-300"> <!-- Changed flex direction to column -->
+    <main class="flex-grow text-center pt-8"> <!-- Added pt-8 for upper padding -->
+        <img src="./M Logo-01.png" alt="Logo" class="mx-auto mb-4 w-24 h-24"> <!-- Changed mb-0 to mb-4 for spacing -->
+
+        <header class="text-5xl mb-4 font-bold">
+            Welcome to <span class="text-red-600">PERSONAL BANK</span>!
+        </header>
+        <section class="bg-blue-300 w-full max-w-md mx-auto p-6 rounded-lg shadow-lg"> 
+            <h3 class="text-3xl mb-4 font-bold">Login Here</h3> 
+            <form class="space-y-4">
+                <div>
+                    <label for="user-email" class="block text-left text-lg font-medium text-gray-700">Email Address</label>
+                    <input id="user-email" class="w-full px-4 py-2 mt-1 rounded border-slate-400 border-2 focus:outline-none focus:border-blue-500" type="email"
+                        placeholder="Enter your Email" required>
+                </div>
+
+                <div>
+                    <label for="user-password" class="block text-left text-lg font-medium text-gray-700">Password</label>
+                    <input id="user-password" class="w-full px-4 py-2 mt-1 rounded border-slate-400 border-2 focus:outline-none focus:border-blue-500"
+                        type="password" placeholder="Enter your Password" required>
+                </div>
+
+                <button id="submit-button"
+                    class="w-full bg-orange-600 text-white rounded px-4 py-2 font-semibold text-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-200">
+                    Login
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center py-4 mt-auto">
+        <p class="text-gray-600">Modified by: <a href="https://momenul.pro" class="text-blue-600 hover:underline" target="_blank">MOMENUL.PRO</a></p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="./login.js"></script>
+</body>
+
+</html>
